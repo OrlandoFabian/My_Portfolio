@@ -52,6 +52,7 @@ a:hover {
 
 #navbar li {
     display: inline;
+    flex: 1;
     font-size: 25px;
     padding-right: 1%;
     text-decoration: none;
@@ -112,7 +113,7 @@ a:hover {
     position: relative;
     top: 0;
 }
-.about-me #about-me-photo button {
+.about-me #about-me-photo div {
     background-color: #B73225;
     border-color: #B73225;
     color: #B73225;
