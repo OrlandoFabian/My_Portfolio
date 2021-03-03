@@ -1,0 +1,143 @@
+html{
+    scroll-behavior: smooth
+}
+
+body{
+    background-color: #2A2C28;
+    background-image: url(images/background.png);
+    background-blend-mode: soft-light;
+    background-attachment:fixed;
+    background-size: cover;
+    width: auto;
+    height: auto;
+    color: white;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6rem;
+    margin: 0;
+
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  cursor: auto;
+  color: white;
+  scroll-behavior: smooth
+}
+
+a:link:active, a:visited:active {
+  color: white;
+  scroll-behavior: smooth
+}
+
+a:hover{
+    color: #2A2C28;
+}
+
+#navbar{
+    background-color: #B73225;
+    width: 100%;
+    color: white;
+    padding: 10px 10px;
+    position: fixed;
+    top: 0%;
+    display: flex;
+}
+
+#navbar ul{
+    padding: 0;
+    display: inline;
+    list-style: none;
+    flex: auto;
+}
+
+#navbar li{
+    display: inline;
+    text-decoration: none;
+    font-size: 25px;
+    padding-right: 1%;
+}
+
+.profile{
+    width: auto;
+    text-align: center;
+    align-items: center;
+    font-size: 150%;
+    margin: 8% 0%;
+}
+
+
+.profile img{
+    margin-top: 10px;
+    border-radius: 50%;
+    object-fit: cover;
+    width:300px;
+    height:300px;
+}
+
+.profile p{
+    padding: 0% 35%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.profile button{
+    background: #B73225;
+    border-radius: 25px;
+    width: 10%;
+    height: 60px;
+    color: white;
+    font-size: 40px;
+    border: #B73225;
+}
+
+.about-me {
+    background-color: #3D516A;
+    display:flex;
+    margin: 5% 0%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-me #about-me-photo{
+    flex: 1;
+    padding: 5% 10%;
+    width:auto;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.about-me #about-me-photo img{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.about-me #about-me-photo button {
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    width: 55%;
+    height: 60%;
+    border-color: #B73225;
+    color: #B73225;
+    background-color: #B73225;
+}
+
+.about-me #about-me-description{
+    flex: 1;
+    flex-basis: 50%;
+    padding: 2%;
+}
+
+.about-me #about-me-description h1{
+    font-size: 400%;
+    text-align: center;
+}
+
+.about-me #about-me-description p{
+    font-size: 200%;
+    text-indent: 50px;
+    line-height: 1.0;
+}
+

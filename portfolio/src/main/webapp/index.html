@@ -1,55 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html id="profile">
   <head>
     <meta charset="UTF-8">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="homePage.css">
     <script src="script.js"></script>
   </head>
   <body>
-      <nav>
-          <ul>
-              <li><a href="work.html">Work Experience</a></li>
-              <li><a href="Projects.html">Projects</a></li>
-              <li><a href="leadership.html">Leadership</a></li>
-              <li><a href="achievements.html">Achievements</a></li>
-              <li><a href="Contact.html">Contact</a></li>
-          </ul>
-      </nav>
+      
+      
       <section>
-          <div>
-             <div><img src="/images/me.png" /></div>
-             <h1>Hello World!</h1>
-             <div>
-                 <p>
-                    My name is <strong>Orlando F. Marrero Soto</strong> and 
-                    welcome to my E-Portfolio! I'm a dedicated student from
-                    the University of Puerto Rico Mayaguez in a bachelors
-                    degree in Software Engineering. This EPortfolio presents
-                    all of my work during my time at college. If you would like
-                    to see my resume, click below!
-                 </p>
-                 <a href="https://drive.google.com/file/d/12h1-aFPDFHbF8nAJ5qEjPuBLFVaY2Hg7/view?usp=sharing" target = "_blank">
+          <div class="profile">
+              <h1><strong>Orlando F. Marrero Soto</strong> </h1>
+              <h4>Software Engineer Student</h4>
+              <div><img src="/images/me.png" /></div>
+              <h1>Welcome to my portfolio!</h1>
+              <div>
+                  <p>
+                    Im a Software Engineer student at the university of Puerto Rico Mayaguez. 
+                    I hope you get to know me a little bit more throughout this portfolio. 
+                    Enjoy the ride!
+                  </p>
+                  <a href="https://drive.google.com/file/d/12h1-aFPDFHbF8nAJ5qEjPuBLFVaY2Hg7/view?usp=sharing" target = "_blank">
                     <button>Resume</button>
-                </a>
-                
+                  </a>
              </div>
           </div>
-             
       </section>
+
+      <section id="about me">
+          <div class="about-me">
+                <div id="about-me-photo">
+                    <button></button>
+                    <img src="/images/me.png" />
+                </div>
+                <div id="about-me-description">
+                    <h1>About me</h1>
+                    <p>
+                        I see myself as a Puerto Rican kid with a dream of gold. I enjoy everything 
+                        that has to do with how humans interact with computers. The design aspects 
+                        of understanding others needs is what drives me as a programmer. It challenges 
+                        me to be more creative. It gives me purpose when creating more inclusive designs. 
+                        Those are challenges that really create an impact in society, and I wan’t to be 
+                        part of that impact. 
+                    </p>
+                    <p>
+                        I have been exposed to web development and UX Design. Adiotionally, I have 
+                        knowledge in Python, Java and SQL.
+                    </p>  
+                        
+                    <p>
+                        If I’m not working you can usually see me roller skating in the park or dancing 
+                        even without music in my ears. I’m all about living the moment. 
+                    </p>
+                        
+                    
+                </div>
+          </div>
+      </section>
+
+      <div class="container">
+          <nav id="navbar">
+              <ul>
+                  <a href="#profile"><li><strong>Orlando</strong></li></a>
+                  <a href="#about me"><li>About me</li></a>
+                  <li>Work Experience</li>
+                  <li>Projects</li>
+                  <li>Leadership</li>
+                  <li>Achievements</li>
+                  <li>Contact me</li>
+              </ul>
+          </nav>
+      </div>
 
   </body>
 </html>
-
-
-<!--<div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
-      <h7>lorem</h7>
-    </div>
-    <p>Hola realmente no se</p>
-    <img src="/images/me.png" />-->
