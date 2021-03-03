@@ -1,19 +1,89 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-  </head>
-  <body>
-    <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
-    </div>
-  </body>
+<html id="profile">
+    <head>
+        <meta charset="UTF-8">
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <section>
+            <div class="profile">
+                <h1><strong>Orlando F. Marrero Soto</strong> </h1>
+                <h4>Software Engineer Student</h4>
+                <div><img src="/images/me.png" alt="Portrait of Orlando"/></div>
+                <h1>Welcome to my portfolio!</h1>
+                <div>
+                    <p>
+                        Im a Software Engineer student at the university of Puerto Rico Mayaguez. 
+                        I hope you get to know me a little bit more throughout this portfolio. 
+                        Enjoy the ride!
+                    </p>
+                    <a href="https://drive.google.com/file/d/12h1-aFPDFHbF8nAJ5qEjPuBLFVaY2Hg7/view?usp=sharing" target = "_blank">
+                        <button>Resume</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about-me">
+            <div class="about-me">
+                <div id="about-me-photo">
+                    <div></div>
+                    <img src="/images/me.png" alt="Portrait of Orlando"/>
+                </div>
+                <div id="about-me-description">
+                    <h1>About me</h1>
+                    <p>
+                        I see myself as a Puerto Rican kid with a dream of gold. I enjoy everything 
+                        that has to do with how humans interact with computers. The design aspects 
+                        of understanding others needs is what drives me as a programmer. It challenges 
+                        me to be more creative. It gives me purpose when creating more inclusive designs. 
+                        Those are challenges that really create an impact in society, and I wan’t to be 
+                        part of that impact. 
+                    </p>
+                    <p>
+                        I have been exposed to web development and UX Design. Adiotionally, I have 
+                        knowledge in Python, Java and SQL.
+                    </p> 
+                    <p>
+                        If I’m not working you can usually see me roller skating in the park or dancing 
+                        even without music in my ears. I’m all about living the moment. 
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="work">
+            <div class="work-title">
+                <h1>Work Experience</h1>
+            </div>
+            <div class="work-container">
+                <div id="work-photo">
+                    <img src="images/mcs.png" alt="Logo of MCS">
+                </div>
+                <div id="work-description">
+                    <ul>
+                        <p>Position:</p>
+                        <p>Company:</p>
+                        <p>Time:</p>
+                        <p>Description:</p>
+                        <p>Skills learned:</p>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    <!-- Put it at the end because some pictures would go in front of the navbar-->
+        <div class="container">
+            <nav id="navbar">
+                <ul>
+                    <a href="#profile"><li><strong>Orlando</strong></li></a>
+                    <a href="#about-me"><li>About me</li></a>
+                    <a href="#work"><li>Work Experience</li></a>
+                </ul>
+            </nav>
+        </div>
+    </body>
 </html>

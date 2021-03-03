@@ -1,9 +1,176 @@
-#content {
-  margin-left: auto;
-  margin-right: auto;
-  width: 650px;
+html {
+    scroll-behavior: smooth
 }
 
-#greeting-container {
-  margin-top: 20px;
+body {
+    background-attachment: fixed;
+    background-blend-mode: soft-light;
+    background-color: #2A2C28;
+    background-image: url(images/background.png);
+    background-size: cover;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    height: auto;
+    line-height: 1.6rem;
+    margin: 0;
+    width: auto;
+}
+
+a:link, a:visited {
+    color: white;
+    cursor: auto;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+a:link:active, a:visited:active {
+    color: white;
+    scroll-behavior: smooth;
+}
+
+a:hover {
+    color: #2A2C28;
+}
+
+#navbar {
+    background-color: #B73225;
+    color: white;
+    display: flex;
+    padding: 10px 10px;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+}
+
+#navbar ul {
+    display: inline;
+    flex: auto;
+    list-style: none;
+    padding: 0;
+}
+
+#navbar li {
+    display: inline;
+    flex: 1;
+    font-size: 25px;
+    padding-right: 1%;
+    text-decoration: none;
+}
+
+.profile {
+    align-items: center;
+    font-size: 150%;
+    margin: 8% 0%;
+    text-align: center;
+    width: auto;
+}
+
+
+.profile img {
+    border-radius: 50%;
+    height: 300px;
+    margin-top: 10px;
+    object-fit: cover;
+    width: 300px;
+}
+
+.profile p {
+    padding: 0% 35%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.profile button {
+    background: #B73225;
+    border: #B73225;
+    border-radius: 25px;
+    color: white;
+    font-size: 40px;
+    height: 60px;
+    width: 10%;
+}
+
+.about-me {
+    align-items: center;
+    background-color: #3D516A;
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0%;
+}
+
+.about-me #about-me-photo {
+    flex: 1;
+    left: 0;
+    padding: 5% 10%;
+    position: relative;
+    top: 0;
+    width: auto;
+}
+
+.about-me #about-me-photo img {
+    left: 0;
+    position: relative;
+    top: 0;
+}
+.about-me #about-me-photo div {
+    background-color: #B73225;
+    border-color: #B73225;
+    color: #B73225;
+    height: 60%;
+    left: 20%;
+    position: absolute;
+    top: 25%;
+    width: 55%;
+}
+
+.about-me #about-me-description {
+    flex: 1;
+    flex-basis: 50%;
+    padding: 2%;
+}
+
+.about-me #about-me-description h1 {
+    font-size: 400%;
+    text-align: center;
+}
+
+.about-me #about-me-description p {
+    font-size: 200%;
+    line-height: 1.0;
+    text-indent: 50px;
+}
+
+.work-title {
+    font-size: 400%;
+    padding-top: 2%;
+    text-align: center;
+}
+
+.work-container {
+    align-items: center;
+    background-color: #88251C;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: auto;
+}
+
+.work-container #work-photo {
+    flex: 1;
+    padding: 2% 5%
+}
+
+.work-container #work-photo img {
+    width: 30rem;
+}
+
+.work-container #work-description {
+    flex: 4;
+    margin: 0%;
+    padding: 0%;
+}
+
+.work-container p {
+    font-size: 200%;
 }
