@@ -1,38 +1,37 @@
 <!DOCTYPE html>
 <html id="profile">
-  <head>
-    <meta charset="UTF-8">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="homePage.css">
-    <script src="script.js"></script>
-  </head>
-  <body>
-      
-      
-      <section>
-          <div class="profile">
-              <h1><strong>Orlando F. Marrero Soto</strong> </h1>
-              <h4>Software Engineer Student</h4>
-              <div><img src="/images/me.png" /></div>
-              <h1>Welcome to my portfolio!</h1>
-              <div>
-                  <p>
-                    Im a Software Engineer student at the university of Puerto Rico Mayaguez. 
-                    I hope you get to know me a little bit more throughout this portfolio. 
-                    Enjoy the ride!
-                  </p>
-                  <a href="https://drive.google.com/file/d/12h1-aFPDFHbF8nAJ5qEjPuBLFVaY2Hg7/view?usp=sharing" target = "_blank">
-                    <button>Resume</button>
-                  </a>
-             </div>
-          </div>
-      </section>
+    <head>
+        <meta charset="UTF-8">
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
 
-      <section id="about me">
-          <div class="about-me">
+    <body>
+        <section>
+            <div class="profile">
+                <h1><strong>Orlando F. Marrero Soto</strong> </h1>
+                <h4>Software Engineer Student</h4>
+                <div><img src="/images/me.png" alt="Portrait of Orlando"/></div>
+                <h1>Welcome to my portfolio!</h1>
+                <div>
+                    <p>
+                        Im a Software Engineer student at the university of Puerto Rico Mayaguez. 
+                        I hope you get to know me a little bit more throughout this portfolio. 
+                        Enjoy the ride!
+                    </p>
+                    <a href="https://drive.google.com/file/d/12h1-aFPDFHbF8nAJ5qEjPuBLFVaY2Hg7/view?usp=sharing" target = "_blank">
+                        <button>Resume</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about-me">
+            <div class="about-me">
                 <div id="about-me-photo">
                     <button></button>
-                    <img src="/images/me.png" />
+                    <img src="/images/me.png" alt="Portrait of Orlando"/>
                 </div>
                 <div id="about-me-description">
                     <h1>About me</h1>
@@ -47,31 +46,48 @@
                     <p>
                         I have been exposed to web development and UX Design. Adiotionally, I have 
                         knowledge in Python, Java and SQL.
-                    </p>  
-                        
+                    </p> 
                     <p>
                         If I’m not working you can usually see me roller skating in the park or dancing 
                         even without music in my ears. I’m all about living the moment. 
                     </p>
-                        
-                    
                 </div>
-          </div>
-      </section>
+            </div>
+        </section>
 
-      <div class="container">
-          <nav id="navbar">
-              <ul>
-                  <a href="#profile"><li><strong>Orlando</strong></li></a>
-                  <a href="#about me"><li>About me</li></a>
-                  <li>Work Experience</li>
-                  <li>Projects</li>
-                  <li>Leadership</li>
-                  <li>Achievements</li>
-                  <li>Contact me</li>
-              </ul>
-          </nav>
-      </div>
+        <section id="work">
+            <div class="work-title">
+                <h1>Work Experience</h1>
+            </div>
+            <div class="work-container">
+                <div id="work-photo">
+                    <img src="images/mcs.png" alt="Logo of MCS">
+                </div>
+                <div id="work-description">
+                    <ul>
+                        <p>Position:</p>
+                        <p>Company:</p>
+                        <p>Time:</p>
+                        <p>Description:</p>
+                        <p>Skills learned:</p>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-  </body>
+    <!-- Put it at the end because some pictures would go in front of the navbar-->
+        <div class="container">
+            <nav id="navbar">
+                <ul>
+                    <a href="#profile"><li><strong>Orlando</strong></li></a>
+                    <a href="#about-me"><li>About me</li></a>
+                    <a href="#work"><li>Work Experience</li></a>
+                    <li>Projects</li>
+                    <li>Leadership</li>
+                    <li>Achievements</li>
+                    <li>Contact me</li>
+                </ul>
+            </nav>
+        </div>
+    </body>
 </html>
