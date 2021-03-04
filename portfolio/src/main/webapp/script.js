@@ -1,7 +1,9 @@
 async function showFunFact() {
   const responseFromServer = await fetch('/fun-fact');
-  const textFromResponse = await responseFromServer.text();
+  const funFactObject = await responseFromServer.json();
+  const funFact = funFactObject[Math.floor(Math.random() * funFactObject.length)];
 
   const factContainer = document.getElementById('fun-fact-message');
-  factContainer.innerText = textFromResponse;
+  factContainer.innerText = funFact
+  
 }
