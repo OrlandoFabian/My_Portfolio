@@ -1,7 +1,6 @@
 
 package com.google.sps.servlets;
 
-import com.google.sps.data.ServerStats;
 import com.google.gson.Gson;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -27,9 +26,5 @@ public class FunFactServlet extends HttpServlet {
 
     response.setContentType("application/json;");
     response.getWriter().println(json);
-
-    
-
   }
-  
 }

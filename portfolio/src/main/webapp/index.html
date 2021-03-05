@@ -78,6 +78,12 @@
         <section>
             <button onclick="showFunFact();">Show Fun Fact</button>
             <p id="fun-fact-message"></p>
+            <form action="/form-handler" method="POST">
+                <p>Enter a fun fact about you:</p>
+                <textarea name="text-input">Fun Fact...</textarea>
+                <br/>
+                <input type="submit" />
+            </form>
         </section>
 
     <!-- Put it at the end because some pictures would go in front of the navbar-->
