@@ -46,7 +46,6 @@ a:hover {
 #navbar ul {
     display: inline;
     flex: auto;
-    list-style: none;
     padding: 0;
 }
 
@@ -88,7 +87,8 @@ a:hover {
     color: white;
     font-size: 40px;
     height: 60px;
-    width: 10%;
+    width: -moz-fit-content;
+    width: fit-content;
 }
 
 .about-me {
@@ -141,13 +141,13 @@ a:hover {
     text-indent: 50px;
 }
 
-.work-title {
+.title {
     font-size: 400%;
     padding-top: 2%;
     text-align: center;
 }
 
-.work-container {
+.section-container {
     align-items: center;
     background-color: #88251C;
     display: flex;
@@ -156,21 +156,161 @@ a:hover {
     width: auto;
 }
 
-.work-container #work-photo {
+.section-container #section-photo {
     flex: 1;
     padding: 2% 5%
 }
 
-.work-container #work-photo img {
+.section-container #section-photo img {
     width: 30rem;
 }
 
-.work-container #work-description {
+.section-container #section-description {
     flex: 4;
     margin: 0%;
     padding: 0%;
 }
 
-.work-container p {
+.section-container p {
+    font-size: 150%;
+    line-height: 1.5;
+    margin: 0;
+    padding: 5px;
+}
+
+.section-container #section-title {
     font-size: 200%;
+    font-weight: bold;
+}
+
+.section-container #learned-skills {
+    display: inline;
+    flex: auto;
+    list-style: none;
+    padding: 0;
+}
+
+.section-container #skill {
+    background-color: rgb(117, 141, 170);
+    border-color: rgb(117, 141, 170);
+    border-radius: 25px;
+    color: white;
+    display: inline;
+    padding: 5px;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.section-container #section-button button {
+    background: #3D516A;
+    border: #3D516A;
+    border-radius: 25px;
+    color: white;
+    font-size: 40px;
+    height: 60px;
+    margin-right: 5px;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.leader-description {
+    font-size: 150%;
+    line-height: 1.5;
+    margin: 0;
+    padding: 5px;
+}
+
+.leader-description #section-title {
+    font-size: 200%;
+    font-weight: bold;
+}
+
+.leader-photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.leader-photo img{
+    padding: 2%;
+    width: 30rem;
+}
+
+.scroll-awards {
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.award-container {
+    background-color: #B73225;
+    border-color: #B73225;
+    width: fit-content;
+    margin: 0% 2%;
+    text-align: center;
+    display: inline-block;
+}
+
+.award-container h1{
+    padding: 0;
+    margin: 0;
+}
+
+.award-description {
+    font-size: 150%;
+}
+
+.award-description img {
+    width: 20rem;
+}
+
+.media {
+    background-color: white;
+    position: fixed;
+    left: 0;
+    top: 50%;
+    width: fit-content;
+    padding: 0% 0.5%;
+}
+
+.media #media-container {
+    display: block;
+}
+
+.media #media-container img {
+    width: 3rem;
+    margin: 0;
+    padding-bottom: 1rem;
+    display: block;
+}
+
+.section-skills {
+padding: 0% 25%;
+}
+
+.section-skills ul {
+text-align: center;
+}
+
+.section-skills li {
+    display: inline-block;
+    align-content: center;
+    text-decoration: none;
+    font-size: 175%;
+}
+
+.container {
+    background: #C4C4C4;
+    height: 2rem;
+    display: inline-block; /* changed from block */
+    text-align: left;
+    border-radius: 3px;
+    width: 35rem;
+    margin-left: 2rem;
+}
+
+.bar-skills{
+    height: 2rem;
+    float: left;
+    background: #FF7B6F;
+    border-color: 1px solid #FF7B6F;
 }
