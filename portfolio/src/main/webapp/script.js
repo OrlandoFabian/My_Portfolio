@@ -7,3 +7,22 @@ async function showFunFact() {
   factContainer.innerText = funFact
   
 }
+
+function requestTranslation() {
+        const text = document.getElementById('Text').innerText;
+        const languageCode = document.getElementById('language').value;
+
+        const resultContainer = document.getElementById('Text');
+
+        const params = new URLSearchParams();
+        params.append('text', text);
+        params.append('languageCode', languageCode);
+
+        fetch('/translate', {
+          method: 'POST',
+          body: params
+        }).then(response => response.text())
+        .then((translatedMessage) => {
+          resultContainer.innerText = translatedMessage;
+        });
+      }

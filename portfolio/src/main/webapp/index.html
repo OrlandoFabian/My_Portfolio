@@ -28,14 +28,16 @@
         </section>
 
         <section id="about-me">
+            <div class="title">
+            </div>
             <div class="about-me">
                 <div id="about-me-photo">
                     <div></div>
                     <img src="/images/me.png" alt="Portrait of Orlando"/>
                 </div>
                 <div id="about-me-description">
-                    <h1>About me</h1>
-                    <p>
+                    <h1 id="Text">About me</h1>
+                    <p id="Text">
                         I see myself as a Puerto Rican kid with a dream of gold. I enjoy everything 
                         that has to do with how humans interact with computers. The design aspects 
                         of understanding others needs is what drives me as a programmer. It challenges 
@@ -43,14 +45,22 @@
                         Those are challenges that really create an impact in society, and I wan’t to be 
                         part of that impact. 
                     </p>
-                    <p>
+                    <p id="Text">
                         I have been exposed to web development and UX Design. Adiotionally, I have 
                         knowledge in Python, Java and SQL.
                     </p> 
-                    <p>
+                    <p id="Text">
                         If I’m not working you can usually see me roller skating in the park or dancing 
                         even without music in my ears. I’m all about living the moment. 
                     </p>
+                    <select id="language">
+                        <option value="en">English</option>
+                        <option value="zh">Chinese</option>
+                        <option value="es">Spanish</option>
+                        <option value="hi">Hindi</option>
+                        <option value="ar">Arabic</option>
+                    </select>
+                    <button onclick="requestTranslation();">Translate</button>
                 </div>
             </div>
         </section>
@@ -80,7 +90,7 @@
                             multiple softwares used in the company.
                         </p>
                         <p><strong>Skills learned:</strong></p>
-                        <ul id="skills">
+                        <ul id="learned-skills">
                             <li id="skill">SQL Server</li>
                             <li id="skill">Asp.Net Core</li>
                             <li id="skill">SSIS</li>
@@ -113,7 +123,7 @@
                             potentially improve the product. 
                         </p>
                         <p><strong>Skills learned:</strong></p>
-                        <ul id="skills">
+                        <ul id="learned-skills">
                             <li id="skill">VBA-Excel</li>
                             <li id="skill">Version Control</li>
                             <li id="skill">Team Work</li>
@@ -152,7 +162,7 @@
                             out to profesors and employees that can have a little chat with them. 
                         </p>
                         <p><strong>Skills learned:</strong></p>
-                        <ul id="skills">
+                        <ul id="learned-skills">
                             <li id="skill">Python</li>
                             <li id="skill">Problem Solving</li>
                             <li id="skill">Organization</li>
@@ -188,7 +198,7 @@
                             the Tech Community. 
                         </p>
                         <p><strong>Skills learned:</strong></p>
-                        <ul id="skills">
+                        <ul id="learned-skills">
                             <li id="skill">Unity</li>
                             <li id="skill">C#</li>
                             <li id="skill">Augmented Reality</li>
@@ -227,7 +237,7 @@
                             I worked on the sign up, sign in and profile page. 
                         </p>
                         <p><strong>Skills learned:</strong></p>
-                        <ul id="skills">
+                        <ul id="learned-skills">
                             <li id="skill">HTML</li>
                             <li id="skill">CSS</li>
                             <li id="skill">React</li>
@@ -397,8 +407,64 @@
                     <li><h1>Python</h1></li>
                     <li>
                         <div class="container">
+                            <div class="bar-skills" style="width: 80%;"></div>
+                        </div>
+                    </li>
+                </ul>
+                <ul>
+                    <li><h1>SQL</h1></li>
+                    <li>
+                        <div class="container">
+                            <div class="bar-skills" style="width: 55%;"></div>
+                        </div>
+                    </li>
+                </ul>
+                <ul>
+                    <li><h1>HTML</h1></li>
+                    <li>
+                        <div class="container">
+                            <div class="bar-skills" style="width: 45%;"></div>
+                        </div>
+                    </li>
+                </ul>
+                <ul>
+                    <li><h1>CSS</h1></li>
+                    <li>
+                        <div class="container">
                             <div class="bar-skills" style="width: 60%;"></div>
                         </div>
+                    </li>
+                </ul>
+                <ul>
+                    <li><h1>Javascript</h1></li>
+                    <li>
+                        <div class="container">
+                            <div class="bar-skills" style="width: 30%;"></div>
+                        </div>
+                    </li>
+                </ul>
+                <ul>
+                    <li><h1>UX Design</h1></li>
+                    <li>
+                        <div class="container">
+                            <div class="bar-skills" style="width: 50%;"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="contact-container">
+                <h1 class="title">Contact Me</h1>
+                <a href="mailto:orlando.marrero6@upr.edu" target="_blank" ><h2>orlando.marrero6@upr.edu</h2></a>
+                <h2>(787)413-1722</h2>
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/in/orlando-marrero-soto-he-him-his-5442b7172" target="_blank" ><img  src="images/linkedin.png" alt="Logo of LinkedIn" style="padding-top: 1rem;" ></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/orlando-marrero-soto-he-him-his-5442b7172" target="_blank" ><h1>Orlando Marrero Soto</h1></a>
                     </li>
                 </ul>
             </div>
@@ -428,6 +494,7 @@
                     <a href="#leadership"><li>Leadership</li></a>
                     <a href="#accomplishments"><li>Accomplishments</li></a>
                     <a href="#skills-section"><li>Skills</li></a>
+                    <a href="#contact"><li>Contact me</li></a>
                     <!-- <a href="/fun-fact"><li>Fun Fact</li></a> -->
                 </ul>
             </nav>
@@ -435,7 +502,7 @@
 
         <div class="media">
             <div id="media-container">
-            <a href="https://www.linkedin.com/in/orlando-marrero-soto-he-him-his-5442b7172" target="_blank" ><img  src="images/linkedin.png" alt="Logo of LinkedIn" style="padding-top: 1rem;" ></a>
+                <a href="https://www.linkedin.com/in/orlando-marrero-soto-he-him-his-5442b7172" target="_blank" ><img  src="images/linkedin.png" alt="Logo of LinkedIn" style="padding-top: 1rem;" ></a>
                 <a href="https://github.com/OrlandoFabian" target="_blank"><img src="images/github.png" alt="Logo of GitHub"></a>
             </div>
         </div>
