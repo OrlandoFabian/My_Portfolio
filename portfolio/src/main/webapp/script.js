@@ -8,22 +8,23 @@ async function showFunFact() {
   
 }
 
-function requestTranslation() {
-        const text = document.getElementsByClassName('Text');
+async function requestTranslation() {
+        var text = document.getElementsByClassName('Text');
         const languageCode = document.getElementById('language').value;
 
-        const resultContainer = document.getElementsByClassName('Text');
+        var resultContainer = document.getElementsByClassName('Text');
 
-        for (var i = 0; i < text.length; i++) {
+        for (var i=0, len=text.length|0; i<len; i=i+1|0) {
             const params = new URLSearchParams();
-            params.append('text', text[i].innerText);
+            params.append('text', text[i].textContent);
             params.append('languageCode', languageCode);
-            fetch('/translate', {
+
+            await fetch('/translate', {
                 method: 'POST',
                 body: params
             }).then(response => response.text())
             .then((translatedMessage) => {
-                resultContainer[i].innerText = translatedMessage;
+                resultContainer[i].textContent = translatedMessage
             }); 
         }
       }
