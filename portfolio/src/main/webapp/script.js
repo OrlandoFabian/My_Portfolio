@@ -4,7 +4,7 @@ async function showFunFact() {
     const funFact = funFactObject[Math.floor(Math.random() * funFactObject.length)];
 
     const factContainer = document.getElementById('fun-fact-message');
-    factContainer.innerText = funFact
+    factContainer.innerText = funFact;
   
 }
 
