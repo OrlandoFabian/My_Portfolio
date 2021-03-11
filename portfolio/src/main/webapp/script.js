@@ -9,20 +9,21 @@ async function showFunFact() {
 }
 
 function requestTranslation() {
-        const text = document.getElementById('Text').innerText;
+        const text = document.getElementsByClassName('Text');
         const languageCode = document.getElementById('language').value;
 
-        const resultContainer = document.getElementById('Text');
+        const resultContainer = document.getElementsByClassName('Text');
 
-        const params = new URLSearchParams();
-        params.append('text', text);
-        params.append('languageCode', languageCode);
-
-        fetch('/translate', {
-          method: 'POST',
-          body: params
-        }).then(response => response.text())
-        .then((translatedMessage) => {
-          resultContainer.innerText = translatedMessage;
-        });
+        for (var i = 0; i < text.length; i++) {
+            const params = new URLSearchParams();
+            params.append('text', text[i].innerText);
+            params.append('languageCode', languageCode);
+            fetch('/translate', {
+                method: 'POST',
+                body: params
+            }).then(response => response.text())
+            .then((translatedMessage) => {
+                resultContainer[i].innerText = translatedMessage;
+            }); 
+        }
       }
