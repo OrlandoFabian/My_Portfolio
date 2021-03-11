@@ -87,7 +87,6 @@ a:hover {
     color: white;
     font-size: 40px;
     height: 60px;
-    width: -moz-fit-content;
     width: fit-content;
 }
 
@@ -223,12 +222,12 @@ a:hover {
 }
 
 .leader-photo {
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: center;
 }
 
-.leader-photo img{
+.leader-photo img {
     padding: 2%;
     width: 30rem;
 }
@@ -241,15 +240,15 @@ a:hover {
 .award-container {
     background-color: #B73225;
     border-color: #B73225;
-    width: fit-content;
+    display: inline-block;
     margin: 0% 2%;
     text-align: center;
-    display: inline-block;
+    width: fit-content;
 }
 
-.award-container h1{
-    padding: 0;
+.award-container h1 {
     margin: 0;
+    padding: 0;
 }
 
 .award-description {
@@ -262,11 +261,11 @@ a:hover {
 
 .media {
     background-color: white;
-    position: fixed;
     left: 0;
+    padding: 0% 0.5%;
+    position: fixed;
     top: 50%;
     width: fit-content;
-    padding: 0% 0.5%;
 }
 
 .media #media-container {
@@ -274,10 +273,10 @@ a:hover {
 }
 
 .media #media-container img {
-    width: 3rem;
+    display: block;
     margin: 0;
     padding-bottom: 1rem;
-    display: block;
+    width: 3rem;
 }
 
 
@@ -286,27 +285,28 @@ a:hover {
 }
 
 .section-skills li {
-    display: inline-block;
     align-content: center;
-    text-decoration: none;
+    display: inline-block;
     font-size: 175%;
+    text-decoration: none;
 }
 
 .container {
     background: #C4C4C4;
-    height: 2rem;
-    display: inline-block; /* changed from block */
-    text-align: left;
     border-radius: 3px;
-    width: 35rem;
+    display: inline-block;
+    height: 2rem;
     margin-left: 2rem;
+    text-align: left;
+    width: 35rem;
 }
 
-.bar-skills{
-    height: 2rem;
-    float: left;
+.bar-skills{    
     background: #FF7B6F;
     border-color: 1px solid #FF7B6F;
+    float: left;
+    height: 2rem;
+
 }
 
 .contact-container {
@@ -318,26 +318,26 @@ a:hover {
 }
 
 .contact-container h2 {
-    text-decoration: none;
     font-size: 100%;
+    text-decoration: none;
 }
 
 .contact-container ul {
-    text-align: center;
-    list-style-type: none;
     display: inline-block;
+    list-style-type: none;
+    text-align: center;
 }
 
 .contact-container li {
-    display: inline-block;
     align-content: center;
-    text-decoration: none;
+    display: inline-block;
     font-size: 100%;
+    text-decoration: none;
 }
 
 .contact-container img {
-    width: 3rem;
+    display: block;
     margin: 0;
     padding-bottom: 1rem;
-    display: block;
+    width: 3rem;
 }
