@@ -24,7 +24,7 @@ async function requestTranslation() {
             body: params
         }).then(response => response.text())
         .then((translatedMessage) => {
-            resultContainer[i].textContent = translatedMessage
+            resultContainer[i].textContent = translatedMessage;
         }); 
     }
 }
